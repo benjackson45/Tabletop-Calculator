@@ -5,11 +5,9 @@
     @viteReactRefresh
     @vite('resources/js/app.jsx')
     @inertiaHead
-    <title>Document</title>
+    <title>Nerdculator</title>
 </head>
 <body>
     @inertia
-    <h1>Welcome to Julysixth Park!</h1>
-    <p>This is a test</p>
 </body>
 </html>
