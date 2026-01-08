@@ -1,23 +1,14 @@
-// import Layout from '../Layouts/Layout';
+import Layout from '../Layouts/Layout';
 
-// const Home = ({}) => {
-//   return (
-//     <>
-//       <H1>Welcome</H1>
-//       <p>Hello world, welcome to your first Inertia app!</p>
-//     </>
-//   )
-// }
-
-// Home.layout = page => <Layout children={page} title="Home" />
-
-// export default Home
-
-export default function Home({}) {
+const Home = ({}) => {
   return (
-    <>
-      <h1>Welcome</h1>
-      <p>Hey bruh, welcome to your first Inertia app!</p>
-    </>
+    <div className="bg-platinum p-4 font-sans">
+      <h1>HELLO WORLD</h1>
+      <p>Welcome to your first Inertia app!</p>
+    </div>
   )
 }
+
+Home.layout = page => <Layout children={page}/>
+
+export default Home
