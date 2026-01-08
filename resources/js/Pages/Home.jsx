@@ -2,9 +2,11 @@ import Layout from '../Layouts/Layout';
 
 const Home = ({}) => {
   return (
-    <div className="bg-platinum p-4 font-sans">
-      <h1>HELLO WORLD</h1>
-      <p>Welcome to your first Inertia app!</p>
+    <div className="p-4">
+      <h1 className="text-pumpkin-500 text-6xl">TABLETOP CALCULATOR</h1>
+      <p>
+        This web-app is a tool for calculating various tabletop game mechanics and probabilities
+      </p>
     </div>
   )
 }

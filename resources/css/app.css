@@ -6,14 +6,40 @@
 @source '../**/*.js';
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans: 'Funnel Sans', ui-sans-serif, system-ui, sans-serif;
 
-    --font-heading: 'Instrument Serif', ui-serif, Georgia, 'Times New Roman', Times, serif; 
+    --font-heading: 'Funnel Sans', ui-sans-serif, system-ui, sans-serif;
 
-    --color-slate: #6B818C;
-    --color-midnight: #291528;
-    --color-platinum: #EDF2F4;
-    --color-pale-sky: #CCDAE0;
-    --color-pumpkin: #FF6700;
+    --color-slate-500: #6B818C;
+    --color-midnight-500: #291528;
+    --color-midnight-300: #432342;
+    --color-platinum-300: #EDF2F4;
+    --color-pale-sky-500: #CCDAE0;
+    --color-pumpkin-500: #FF6700;
+}
+
+@layer base {
+    body {
+        @apply bg-platinum-300;
+        @apply text-midnight-500;
+        @apply font-sans;
+        @apply text-base;
+    }
+
+    h1, h2, h3, h4, h5, h6{
+        @apply font-heading;
+        @apply uppercase;
+        @apply font-bold;
+    }
+
+    a {
+        @apply font-heading;
+        @apply text-pale-sky-500;
+        @variant hover {
+            @apply text-platinum-300;
+        }
+        @variant active {
+            @apply text-midnight-500;
+        }
+    }
 }
